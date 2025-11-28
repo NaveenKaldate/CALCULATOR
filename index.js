@@ -1,6 +1,6 @@
 const display = document.getElementById("Display");
 const buttons = document.querySelectorAll(".Num");
-
+// Calculator Project
 let current = "";   // stores typed numbers
 let first = null;   // stores first number
 let operator = null;
