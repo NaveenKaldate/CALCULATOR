@@ -1,0 +1,104 @@
+/* 🔹 Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 🔹 Body Layout */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #e0f7fa, #ffa068);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* 🔹 Header */
+header {
+    width: 100%;
+    height: 7vh;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: rgb(238, 133, 20);
+    text-shadow: #2d2c2a 1px 0 10px;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+/* 🔹 Calculator Container */
+.calculator {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 340px;
+    height: auto;
+    background-color: #00e5ff;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+
+/* 🔹 Display */
+#Display {
+    width: 90%;
+    height: 60px;
+    font-size: 2rem;
+    text-align: right;
+    padding: 10px;
+    margin: 15px 0 25px 0;
+    border: 3px solid #333;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    outline: none;
+}
+
+/* 🔹 Button Grid */
+.matrix {
+    display: grid;
+    grid-template-columns: repeat(4, 70px);
+    grid-gap: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 🔹 Buttons */
+.matrix input[type="button"] {
+    height: 60px;
+    width: 70px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #ffcc80;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px #999;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* 🔹 Hover & Active Effects */
+.matrix input[type="button"]:hover {
+    background-color: #ffa726;
+}
+
+.matrix input[type="button"]:active {
+    box-shadow: 0 2px #666;
+    transform: translateY(2px);
+}
+
+/* 🔹 Special Buttons (Optional Styling) */
+.matrix input[value="C"] {
+    background-color: #ef5350;
+    color: white;
+}
+
+.matrix input[value="="] {
+    background-color: #66bb6a;
+    color: white;
+}
